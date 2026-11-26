@@ -1,11 +1,13 @@
-from funcoes import (createTables,
-                     listarProdutos,
-                     insertComprador, 
-                     insertVendedor, 
-                     insertProduto, 
-                     insertCompra, 
-                     updateComprador,
-                     deleteCompra)
+from funcoes import (
+    createTables,
+    listarProdutos,
+    insertComprador, 
+    insertVendedor, 
+    insertProduto, 
+    insertCompra, 
+    updateComprador,
+    deleteCompra
+)
 
 while True:
     print()

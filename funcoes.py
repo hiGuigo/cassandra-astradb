@@ -1,20 +1,6 @@
-
-import os
 import uuid
-from datetime import datetime, timezone
 from decimal import Decimal
-
-from dotenv import load_dotenv
-load_dotenv()
-
-from cassandra.cluster import Cluster
-from cassandra.auth import PlainTextAuthProvider
-from cassandra import InvalidRequest
-
-cloud = {"secure_connect_bundle": os.environ["ASTRA_SCB_PATH"]}
-auth = PlainTextAuthProvider("token", os.environ["ASTRA_DB_TOKEN"])
-cluster = Cluster(cloud=cloud, auth_provider=auth)
-session = cluster.connect("mercadolivre")
+from conexao import session
 
 #CREATE TABLES
 def createTables():
